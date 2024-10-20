@@ -7,7 +7,7 @@ const mqttwifi = formatMessage => ({
     version: '1.0.0',
     supportDevice: ['arduinoEsp32', 'arduinoEsp32C3', 'thingBot_esp32C3', 'thingBot_arduinoEsp32C3'],
     author: 'undo1111hp',
-    iconURL: `assets/ps2.png`,
+    iconURL: `assets/meo-block.png`,
     description: formatMessage({
         id: 'mqtt_wifi.description',
         default: 'MQTT and Wifi Module.'
