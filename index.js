@@ -5,7 +5,7 @@ const mqttwifi = formatMessage => ({
     }),
     extensionId: 'meo',
     version: '1.0.0',
-    supportDevice: ['arduinoUno', 'arduinoNano', 'arduinoLeonardo', 'arduinoMega2560', 'arduinoEsp32', 'arduinoEsp32C3', 'arduinoEsp8266', 'thingBot_esp32C3', 'thingBot_arduinoEsp32C3'],
+    supportDevice: ['arduinoEsp32', 'arduinoEsp32C3', 'thingBot_esp32C3', 'thingBot_arduinoEsp32C3'],
     author: 'undo1111hp',
     iconURL: `assets/ps2.png`,
     description: formatMessage({
