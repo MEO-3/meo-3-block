@@ -20,7 +20,7 @@ const mqttwifi = formatMessage => ({
     library: 'lib',
     official: true,
     tags: ['communication'],
-    helpLink: 'https://github.com/MEO-3'
+    helpLink: 'https://github.com/MEO-3/meo-block'
 });
 
 module.exports = mqttwifi;
