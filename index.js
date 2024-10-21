@@ -1,4 +1,4 @@
-const mqttwifi = formatMessage => ({
+const meo = formatMessage => ({
     name: formatMessage({
         id: 'meo.name',
         default: 'MEO3 Module'
@@ -23,4 +23,4 @@ const mqttwifi = formatMessage => ({
     helpLink: 'https://github.com/MEO-3/meo-block'
 });
 
-module.exports = mqttwifi;
+module.exports = meo;

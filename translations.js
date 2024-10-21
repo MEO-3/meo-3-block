@@ -22,13 +22,13 @@ function registerScratchExtensionTranslations () {
 function registerBlocksMessages (Blockly) {
     Object.assign(Blockly.ScratchMsgs.locales["en"],
         {
-            "MEO_CATEGORY": "MEO BLOCKS",
-            "MEO_INIT": "init mqtt wifi",
+            "MEO_CATEGORY": "MEO Blocks",
+            // "MEO_INIT": "init mqtt wifi",
             "MEO_WIFI_CONFIG": "set wifi ssid %1 password %2",
             "MEO_MQTT_CONFIG": "set mqtt server %1 port %2",
             "MEO_FINAL_CONFIG": "finalize config and connect (after wifi&mqtt)",
-            "MEO_CHECK_WIFI": "check wifi connection",
-            "MEO_WIFI_RECONNECT": "reconnect wifi",
+            "MEO_CHECK_WIFI": "check connection",
+            "MEO_WIFI_RECONNECT": "reconnect",
             "MEO_MQTT_PUBLISH": "mqtt publish message %1 topic %2"
         }
     );

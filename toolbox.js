@@ -4,7 +4,6 @@
 function registerToolboxs () {
     return `
 <category name="%{BKY_MEO_CATEGORY}" id="MEO_CATEGORY" colour="#FF3399" secondaryColour="#C71585">
-    <block type="meo_init" id="meo_init"></block>
     <block type="meo_wificonfig" id="meo_wificonfig">
         <value name="SSID">
             <shadow type="text">
