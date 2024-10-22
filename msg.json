@@ -1,5 +1,5 @@
 {
-    "MEO_CATEGORY": "MEO BLOCKS",
+    "MEO_CATEGORY": "MEO Block",
     "MEO_WIFI_CONFIG": "set wifi ssid %1 password %2",
     "MEO_MQTT_CONFIG": "set mqtt server %1 port %2",
     "MEO_FINAL_CONFIG": "finalize config (after wifi&mqtt)",

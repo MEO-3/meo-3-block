@@ -8,8 +8,8 @@
 function getInterfaceTranslations () {
     return {
         "en": {
-            "meo.name": "MEO BLOCKS",
-            "meo.description": "MEO3 Module",
+            "meo_block.name": "MEO Block",
+            "meo_block.description": "MEO3 Module",
         }
     }
     ;
@@ -22,7 +22,7 @@ function registerScratchExtensionTranslations () {
 function registerBlocksMessages (Blockly) {
     Object.assign(Blockly.ScratchMsgs.locales["en"],
         {
-            "MEO_CATEGORY": "MEO Blocks",
+            "MEO_CATEGORY": "MEO Block",
             // "MEO_INIT": "init mqtt wifi",
             "MEO_WIFI_CONFIG": "set wifi ssid %1 password %2",
             "MEO_MQTT_CONFIG": "set mqtt server %1 port %2",

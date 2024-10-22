@@ -1,16 +1,16 @@
-const meo = formatMessage => ({
+const meo_block = formatMessage => ({
     name: formatMessage({
-        id: 'meo.name',
+        id: 'meo_block.name',
         default: 'MEO3 Module'
     }),
-    extensionId: 'meo',
+    extensionId: 'meo_block',
     version: '1.0.0',
     supportDevice: ['arduinoEsp32', 'arduinoEsp32C3', 'thingBot_esp32C3', 'thingBot_arduinoEsp32C3'],
     author: 'undo1111hp',
     iconURL: `assets/meo-block.png`,
     description: formatMessage({
-        id: 'mqtt_wifi.description',
-        default: 'MQTT and Wifi Module.'
+        id: 'meo_block.description',
+        default: 'MEO3 Module.'
     }),
     featured: true,
     blocks: 'blocks.js',
@@ -23,4 +23,4 @@ const meo = formatMessage => ({
     helpLink: 'https://github.com/MEO-3/meo-block'
 });
 
-module.exports = meo;
+module.exports = meo_block;
