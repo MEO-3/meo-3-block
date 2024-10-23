@@ -23,8 +23,8 @@ function registerToolboxs () {
             </shadow>
         </value>
         <value name="PORT">
-            <shadow type="text">
-                <field name="TEXT">PORT</field>
+            <shadow type="math_number">
+                <field name="NUM">PORT</field>
             </shadow>
         </value>
     </block>

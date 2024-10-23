@@ -18,7 +18,7 @@ function registerGenerators (Blockly) {
     Blockly.Arduino.meo_mqttconfig = function (block) {
         const server = Blockly.Arduino.valueToCode(block, 'SERVER', Blockly.Arduino.ORDER_ATOMIC);
         const port = Blockly.Arduino.valueToCode(block, 'PORT', Blockly.Arduino.ORDER_ATOMIC);
-        return `meo_con.setMqttConfig(${server}, ${port});\n`;
+        return `meo_con.setMqttConfig(${server},  ${port});\n`;
     };
     Blockly.Arduino.meo_finalconfig = function () {
         Blockly.Arduino.includes_.meo_init = `#include "MeoConnect.h"\n#include "MeoMessage.h"`
