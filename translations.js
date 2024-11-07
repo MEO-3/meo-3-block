@@ -23,7 +23,11 @@ function registerBlocksMessages (Blockly) {
     Object.assign(Blockly.ScratchMsgs.locales["en"],
         {
             "MEO_CATEGORY": "MEO Block",
-            // "MEO_INIT": "init mqtt wifi",
+            "MEO_INIT": "init board",
+            "MEO_SET_MOTOR": "set motor %1",
+            "MEO_BUZZER": "set buzzer %1",
+            "MEO_STOP_BUZZER": "stop buzzer",
+            "MEO_SET_LED": "set led %1 %2",
             "MEO_WIFI_CONFIG": "set wifi ssid %1 password %2",
             "MEO_MQTT_CONFIG": "set mqtt server %1 port %2",
             "MEO_FINAL_CONFIG": "finalize config and connect (after wifi&mqtt)",

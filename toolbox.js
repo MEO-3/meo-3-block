@@ -4,6 +4,22 @@
 function registerToolboxs () {
     return `
 <category name="%{BKY_MEO_CATEGORY}" id="MEO_CATEGORY" colour="#FF3399" secondaryColour="#C71585">
+    <block type="meo_init" id="meo_init"></block>
+    <block type="meo_setMotor" id="meo_setMotor">
+        <field name="DIRECTION">forward</field>
+    </block>
+    <block type="meo_buzzer" id="meo_buzzer">
+        <value name="SOUND">
+            <shadow type="math_number">
+                <field name="NUM">0</field>
+            </shadow>
+        </value>
+    </block>
+    <block type="meo_stopBuzzer" id="meo_stopBuzzer"></block>
+    <block type="meo_setLed" id="meo_setLed">
+        <field name="LED">left_led</field>
+        <field name="STATE">on</field>
+    </block>
     <block type="meo_wificonfig" id="meo_wificonfig">
         <value name="SSID">
             <shadow type="text">
