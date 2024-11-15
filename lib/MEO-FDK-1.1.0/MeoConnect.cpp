@@ -28,11 +28,12 @@ void MeoConnect::initConfig() {
   Serial.println("IP address: " + WiFi.localIP().toString());
 
   client.setServer(this->mqttServer, this->mqttPort);
+  client.setCallback(defaultCallback);
 }
 
 void MeoConnect::reconnect() {
+  Serial.print("Attempting MQTT connection");
   while (!client.connected()) {
-    Serial.print("Attempting MQTT connection");
     if (client.connect("MEO-3")) {
       Serial.println("\nConnected to MQTT Broker");
       client.publish("meo3/test", "Hello world from Arduino - MEO!");
@@ -46,4 +47,13 @@ void MeoConnect::reconnect() {
 void MeoConnect::pubMessageToTopic(char *message, char *topic) {
   client.publish(topic, message, 1);
   client.flush();
+}
+
+void MeoConnect::defaultCallback(char* topic, byte* payload, int length) {
+  Serial.printf("Receive message on topic: %s", topic);
+  Serial.print("Message: ");
+  for (int i = 0; i < length; i++) {
+    Serial.print((char)payload[i]);
+  }
+  Serial.println();
 }
